@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+    <html data-theme="light"></html>
+  </head>
+  <body class="bg-white">
+    <div class="flex">
+      <!-- Left Drawer (Hidden on Small Devices) -->
+      <div class="drawer lg:drawer-open w-64">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col items-center justify-center">
+          <!-- Page content here -->
+          <!-- Hamburger Icon -->
+          <label for="my-drawer-2" class="lg:hidden absolute top-4 right-4 cursor-pointer">
+            <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </label>
+        </div>
+        <div class="drawer-side">
+          <label
+            for="my-drawer-2"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <ul class="menu p-4 w-72 min-h-full bg-base-200 text-base-content">
+            <!-- Sidebar content here -->
+
+            <!-- Title and Profile Image -->
+            <div class="flex justify-between items-center mb-4">
+              <div class="flex items-center gap-2">
+                <img
+                  src="public/1394.png"
+                  class="w-8 h-8 rounded-full bg-white"
+                  alt=""
+                />
+                <h2 class="text-lg font-semibold mr-2">InnovateHub</h2>
+              </div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGvj2fMzmOAbR5-fureGVf_eTERee61iXhbW8hQ8rvyw&s"
+                alt="Profile Image"
+                class="w-8 h-8 rounded-full"
+              />
+            </div>
+
+            <li><a class="font-semibold">Design Team</a></li>
+            <li><a class="font-semibold">Marketing Team</a></li>
+            <li><a class="font-semibold">Development Team</a></li>
+            <li><a class="font-semibold text-gray-500 mb-2">+ Create a team</a></li>
+            <li><a class="font-semibold text-gray-500 text-xs">FOLDERS +</a></li>
+            <li><a class="font-semibold">Products</a></li>
+           <div class="ml-4">
+            <li><a class="font-semibold">Roadmap</a></li>
+            <li><a class="font-semibold">Feedback</a></li>
+            <li><a class="font-semibold">Performance</a></li>
+            <li><a class="font-semibold">Team</a></li>
+            <li><a class=" text-gray-500">+ Add new sub</a></li>
+           </div>
+           <li><a class="font-semibold">Sales</a></li>
+           <li><a class="font-semibold">Design</a></li>
+           <li><a class="font-semibold">Office</a></li>
+           <li><a class="font-semibold">Legal</a></li>
+
+           <div class="mt-10">
+            <li><a class="font-semibold">Invite Teammates</a></li>
+            <li><a class="font-semibold">Help and first steps</a></li>
+            <li><a class="font-semibold">7 days left on trial <span class="bg-black text-white rounded-lg px-2 py-1">Add billing</span></a></li>
+           </div>
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- Right Content Area -->
+      <div class="w-full lg:w-3/4 lg:ml-10 right-content">
+
+        <!-- Top Bar -->
+        <div class="bg-white py-2 px-6 flex justify-between items-center shadow rounded-lg">
+          <!-- Products -->
+          <h1 class="text-2xl font-semibold">Products</h1>
+
+          <!-- Search Bar -->
+          <input
+            type="text"
+            placeholder="Search..."
+            class="border border-gray-300 rounded-lg px-2 py-1 focus:outline-none focus:border-blue-500"
+          />
+        </div>
+
+        <!-- Below Top Bar -->
+        <div class="py-2 px-6 lg:flex lg:justify-between lg:items-center">
+          <!-- Buttons with Dropdowns -->
+          <div class="lg:flex lg:gap-2">
+            <!-- Example Button with Dropdown -->
+
+              <details class="dropdown">
+                <summary class="m-1 btn bg-white">All Brands</summary>
+                <ul
+                  class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </details>
+              <details class="dropdown">
+                <summary class="m-1 btn bg-white">Desk</summary>
+                <ul
+                  class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </details>
+              <details class="dropdown">
+                <summary class="m-1 btn bg-white">Tags</summary>
+                <ul
+                  class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </details>
+              <details class="dropdown">
+                <summary class="m-1 btn text-gray-500 bg-white">Sort</summary>
+                <ul
+                  class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </details>
+              <details class="dropdown">
+                <summary class="m-1 btn text-gray-500 bg-white">Filter</summary>
+                <ul
+                  class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </details>
+
+            <!-- Add more buttons here -->
+          </div>
+
+          <div>
+            <details class="dropdown">
+              <summary class="m-1 btn bg-white">Meeting</summary>
+              <ul
+                class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+              >
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+              </ul>
+            </details>
+            <details class="dropdown">
+              <summary class="m-1 btn bg-white">Import/Export</summary>
+              <ul
+                class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+              >
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+              </ul>
+            </details>
+          </div>
+        </div>
+
+        <!-- Below Top Bar -->
+        <div class="flex flex-wrap shadow rounded-lg">
+          <div class="overflow-x-auto">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <th class="lg:w-36">Brand</th>
+                  <th class="w-52">Description</th>
+                  <th class="w-52">Members</th>
+                  <th class="w-52">Categories</th>
+                  <th class="w-52">Tags</th>
+                  <th class="w-52">Next meeting</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+
+                  <td class="flex items-center gap-2">
+                   <img src="public/download.png" class="w-6 h-6" alt=""> <span class="font-semibold">Wix</span>
+                  </td>
+                  <td class="font-semibold">Develop a personalized</td>
+                  <td class="flex">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                    
+                   </td>
+                  <td class="text-green-500 font-semibold">Automation</td>
+                  <td class="text-gray-500">#DigitalTransformation</td>
+                  <td class="text-green-300 font-semibold">In 30 minutes</td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+
+                  <td class="flex items-center gap-2">
+                    <img src="public/download.png" class="w-6 h-6" alt=""> <span class="font-semibold">Wix</span>
+                   </td>
+                  <td class="font-semibold">Develop a personalized</td>
+                  <td class="flex">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                   </td>
+                  <td class="text-green-500 font-semibold">Automation</td>
+                  <td class="text-gray-500">#DigitalTransformation</td>
+                  <td class="text-green-300 font-semibold">In 30 minutes</td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+
+                  <td class="flex items-center gap-2">
+                    <img src="public/download.png" class="w-6 h-6" alt=""> <span class="font-semibold">Wix</span>
+                   </td>
+                  <td class="font-semibold">Develop a personalized</td>
+                  <td class="flex">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                    <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" class="w-10 h-8 rounded-full" alt="">
+                   </td>
+                  <td class="text-green-500 font-semibold">Automation</td>
+                  <td class="text-gray-500">#DigitalTransformation</td>
+                  <td class="text-green-300 font-semibold">In 30 minutes</td>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+
+                  <td class="flex items-center gap-2">
+                    <img src="public/download.png" class="w-6 h-6" alt=""> <span class="font-semibold">Wix</span>
+                   </td>
+                  <td class="font-semibold">Develop a personalized</td>
+                  <td class="flex">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                    <img src="public/download.png" class="w-6 h-6" alt="">
+                   </td>
+                  <td class="text-green-500 font-semibold">Automation</td>
+                  <td class="text-gray-500">#DigitalTransformation</td>
+                  <td class="text-green-300 font-semibold">In 30 minutes</td>
+                </tr>
+              </tbody>
+              <!-- foot -->
+              <tfoot>
+                <tr>
+                  <th></th>
+                  <th>10 count</th>
+                  <th>+ Add Calculation</th>
+                  <th>+ Add Calculation</th>
+                  <th>+ Add Calculation</th>
+                  <th>+ Add Calculation</th>
+                  <th></th>
+                </tr>
+              </tfoot>
+            </table>
+            
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center lg:mt-24">
+          <button class="btn ">Selected</button>
+          <button class="btn ">Archive</button>
+          <button class="btn ">Delete</button>
+          <button class="btn ">More</button>
+          <button class="btn">×</button>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
